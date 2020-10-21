@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: yellow;
+            border : 2px green groove;
+            height: 121212px;
+
+
+        }
+        /* position: static(default), absoulte, realtive, fixed, sticky; */
+        .box{
+            border: 3px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block; /*to display in one line refer to tut24 in video for display propereties*/
+        }
+        #box3{
+            position: relative;
+            top: 24px;
+            leftt: 221px;
+        }
+         #box5{
+            position: fixed; /*fixed to a point even when you scroll through a page*/
+            right: 4px;
+            margin: 4px 12px;
+        } 
+        #box4{
+            /*for menu design*/
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">121</div>
+        <div class="box" id="box2">312312312</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">2131312</div>
+        <div class="box" id="box5">213131kobeee2</div>
+    </div>
+</body>
+</html>

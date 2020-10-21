@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<style>
+   /*CSS Reset*/
+   body{
+       margin: 0px;
+       padding: 0px;
+       background: url('https://source.unsplash.com/1600x900/?gym');
+       font-family: 'Josefin Sans', sans-serif;
+       /* height: 12122px; */
+   }
+   .left{
+        border:2px solid white;
+        display: inline-block;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+   }
+   .left img{
+       width: 100px; 
+       height: 60px;
+   }
+   .left div{
+       text-align: center;
+   }
+   .center{
+       /* to align to center display has to be block margin on X axis has to be auto and widht at 33% if there are three elemtns ,,,, all of this is applicabel if we use margin property to align text we can also use flexbox and float */
+       border:2px solid green;
+       display: block;
+       margin: 10px auto;
+       width: 36%;
+   }
+
+   
+   .right{
+        border:2px solid white;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 10px;
+   }
+   .navbar{
+       display: inline-block;
+   }
+   .navbar li{
+       display: inline-block;
+       font-size: 20px;
+   }
+   .navbar li a{
+       color: white;
+       text-decoration: none;
+       padding: 20px 20px;
+   }
+   .navbar li a:hover, .navbar li a.active{
+       /* text-decoration: underline; */
+       color: rgb(53, 48, 51);
+   }
+   .button{
+       margin: 0px 9px;
+       background-color: white;
+       /* color: white; */
+       padding: 4px 15px;
+       border-radius: 5px;
+       border: 2px solid white;
+       font-size: 15px;
+       cursor: pointer;
+       font-family: 'Josefin Sans', sans-serif;
+   }
+   .button:hover{
+       background-color: black;
+       
+       color:white;
+   }
+   </style>
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="images.png">
+            <div>
+                GYM ME
+            </div>
+        </div>
+
+        <!-- for nav -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >About</a></li>
+                <li><a href="#" >Contact us</a></li>
+                <li><a href="#" >BMI CALC</a></li>
+            </ul>
+        </div>
+
+        <!-- for search box -->
+        <div class="right">
+            <button class="button"> Call us now</button>
+            <button class="button"> search</button>
+
+        
+        </div>
+    </header>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2> This will be the form tut</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div> <!-- THIS IS A BLOCK ELEMENT TAKES A WIDTH WORTH OF SIZE -->
+            Name: <input type="text" name="myName" id="name">
+        </div>
+
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+
+        <div>
+            <!-- To get a box to enter text -->
+           Kuch likh de:<br> <textarea name="myText " id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <!-- "Name" is what your backend uses to identify this Tag, the Email field here  -->
+            E-Mail: <input type="email" name="myEmail">
+        </div>
+
+        <div>
+            Check: <input type="checkbox" checked name="myCeck">
+        </div>
+
+        <br>
+        <div>
+
+            Date: <br><input type="date" name="myDate">
+        </div>
+
+        <div>
+            Bonus :<input type="number" name="myBonus">
+            <!-- this also accepts e to enter a number i.e 2e4 -->
+        </div>
+
+        <div>
+            <!-- IT SELECTS EITHER OF THE TWO BECOME BOTH HAVE THE SAME NAME ATTRIBUTE VALUE i.e myGender -->
+            Gender: Male<input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+
+        <div>
+            <input type="reset" value="REset">
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit Now Man">
+        </div>
+        <div>
+            <label for="car">CAR</label>
+            <select name="myCar" id="car">
+                <option value="indica" selectd >Indica</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+
+    </form>
+    
+</body>
+</html>

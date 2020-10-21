@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box Model</title>
+    <style>
+        /*this is a universal selector below*/
+        *{
+            box-sizing: border-box;;
+        }
+        .container{
+            /*  same syntax for margin and padding */
+            background-color: rgb(238, 194, 143);
+            border: 3px groove rgb(94, 74, 165);
+            border-radius: 13px;
+            /* padding-right: 30px; words and border ka distance */
+
+            /* padding = top right bottom left; */ /*short hand for all sides*/
+            padding: 33px 33px;
+
+            /* padding: 34px 19px;padding: y(top/bottom) x(left/right) */ /*short hand for two sides with the same size*/
+            margin: 33px 33px; /*page and element ka distance*/
+            width: 633px;
+            box-sizing : border-box; /*this adjust paddding with the width size*/
+        }
+        body{
+            background-color: rgb(255, 166, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3> This is my heading</h3>
+        <p id="first"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate beatae pariatur illo aliquid, quia veniam ab modi, architecto, consectetur consequatur atque? Itaque voluptatem, et praesentium commodi ducimus nihil. Vel eveniet qui quis commodi aliquam.</p>
+    </div>
+    
+    <div class="container">
+        <h3> This is my heading</h3>
+        <p id="third"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate beatae pariatur illo aliquid, quia veniam ab modi, architecto, consectetur consequatur atque? Itaque voluptatem, et praesentium commodi ducimus nihil. Vel eveniet qui quis commodi aliquam.</p>
+    </div>
+
+    <div class="container">
+        <h3> This is my heading</h3>
+        <p id="second"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate beatae pariatur illo aliquid, quia veniam ab modi, architecto, consectetur consequatur atque? Itaque voluptatem, et praesentium commodi ducimus nihil. Vel eveniet qui quis commodi aliquam.</p>
+    </div>
+</body>
+</html>

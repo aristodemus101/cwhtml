@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+</head>
+<style>
+    .container{
+        height: 644px;
+        width:100%;
+        border: 2px solid black;
+        /* Initialzie the container as a flex box */
+        display: flex;
+        /* FLEX PROPERTIES for FLEX CONTAINER */
+        /* flex-direction:row-reverse ; by default it is row */
+        /* flex-direction: column ; by default it is row */
+        flex-direction: row-reverse ; /*by default it is row*/
+
+        /* flex-wrap: wrap; for responsive desgin, by default no-wrap */
+        flex-wrap: wrap-reverse; /*for responsive desgin, by default no-wrap*/
+        /* flex-flow: flex-direction flex-wrap;--> short hand */
+        justify-content: center;
+        /* TimeStamp- 19:00 justify-content: space-between;/*see for yourself
+        justify-content: space-evenly; /*see for your self
+        justify-content: space-around; */
+        align-items: center; /*vertically center*/
+        /* align-items:flex-end; */
+        /* align-items: stretch; vertically equal sapce  */
+    }
+
+
+    .item{
+        width: 200px;
+        height: 100px;
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 3px;    }
+
+</style>
+<body>
+    <h2> This is FLexBox tutorial</h2>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Sexond box</div>
+        <div class="item" id="item-3">Thirs box</div>
+        <div class="item" id="item-4">4th box</div>
+        <div class="item" id="item-5">fifth box</div>
+        <div class="item" id="item-6">sixth box</div>
+    </div>
+    
+</body>
+</html>'

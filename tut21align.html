@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            font-style: italic;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid black;
+            background-color: brown;
+            /* padding-left: 10px 4px; */
+            margin: auto;
+
+        }
+        .item{
+            border: 3px solid rgb(0, 204, 255);
+            margin: 13px 13px;
+            padding : 12px 12px;
+            background: rgb(240, 218, 120);
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+
+        }
+        #computers{
+            float: left;
+            width:36%;
+
+        }
+        #books{
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+         p,h2{
+            /* 
+            text-align: justify;
+            text-align: right;
+            text-align: left; */
+            text-align: center;
+         }
+         h1{
+             padding: 4px 4px;
+             text-align: center;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--#fruits.item gives id as fruits and class as item for by default div -->
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item"> 
+            <h2>Fruits</h2>
+            <p id="fruitsPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quae repellendus eaque fugit at perferendis laborum rerum dolores odio cumque.</p>
+        </div>
+
+        <div id="computers" class="item"> 
+            <h2>Computers</h2>
+            <p id="computerPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quae repellendus eaque fugit at perferendis laborum rerum dolores odio cumque.</p>
+        </div>
+
+        <div id="books" class="item"> 
+            <h2>books</h2>
+            <p id="booksPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quae repellendus eaque fugit at perferendis laborum rerum dolores odio cumque.</p>
+        </div>
+
+        <div id="classes" class="item"> 
+            <h2>classes</h2>
+            <p id="booksPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quae repellendus eaque fugit at perferendis laborum rerum dolores odio cumque.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

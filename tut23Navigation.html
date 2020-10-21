@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: rgb(148, 1, 148);
+            border-radius: 29px;
+            margin: 2px 2px;
+            align: center; /*distanfce from the sides of the page*/
+        }
+        .navbar ul{
+            /*if we use just the below code it wont show the bg color because when we flaot a n object it overflows the parent so we have to tatgernt the ul tag tooverflow li.*/ 
+            overflow: auto;
+            align: center;
+        }
+        .navbar li{
+            float: left;
+            list-style-type: none;
+            margin:10px 10px;
+            /* padding-top: 2px */
+            
+        }
+        .navbar li a{
+            padding:3px 3px;
+            text-decoration: none;/*to remove the underline below the hyperlink*/
+            color: white;
+            padding-top: 10px;
+        }
+        .navbar li a:hover{
+          background-color: green;
+          padding-top:10px;
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 29px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h3> THIS IS NAVIGATION</h3> -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search on this site">
+                </div>
+            </ul>
+            
+        </nav>
+    </header>   
+</body>
+</html>

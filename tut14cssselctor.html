@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <link rel="stylesheet" href="tut13CSSone.css">
+    <style>
+        /* this is an element selector */
+        p{
+            color: yellow;
+        }
+        /* this is an ID selector */
+        .red
+        {
+            color: purple;
+            border: 2px solid red;
+        }
+        #redbackground
+        {
+            color: blue;
+            background-color: red;
+        }
+        /* this is grouping selector */
+        footer,span{
+            color : navy;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS selectors</h3>
+    <p> SImple para to demonstatre CSS selectors</p>
+    <p id="redbackground"> SImple para to demonstatre CSS selectors</p>
+    <p class="red"> SImple para to demonstatre CSS selectors</p>
+    <footer> THIS IS FOOTER </footer>
+    <span> this is to demonstrate grouping selector</span>
+</body>
+</html>

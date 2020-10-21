@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tutorial</title>
+    <!-- between external and internal css whichever is writtern later superseeds, as in if the link tag was given below the style tag it woudl take precedence over style tag -->
+    <!-- THIS IS HOW yoU LINK EXTERNAL CSS -->
+    <link rel="stylesheet" href="tut13CSSone.css">
+    <!-- THIS IS INTERNAL CSS -->
+    <style>
+        p{
+            color:red;
+            /* to give importance use this importnat as shown below */
+            background-color: purple !important; 
+        }
+    </style>
+</head>
+<body>
+    <!-- INLINE CSS suprseeds INTERNAL CSS -->
+    <h1> this is a CSS tutorial</h1>
+    <p> This tutorial will teach you everything yuou need to know about HTML and CSS</p>
+    
+</body>
+</html>

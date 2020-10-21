@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar Practice</title>
+    <style>
+        
+        .navbar{
+            background-color:rgb(5, 0, 7);
+            align : top;
+            border-radius: 10px;
+        }
+        .navbar ul{
+            overflow:auto;
+            align: top;
+            padding: 6px 12px;
+            margin:12px 2px;
+            /* background-color: red; */
+        }
+        .navbar li{
+            list-style-type: none;
+            float: left;
+            /* background-color:red */
+            padding: 2px 2px;
+            margin: 6px 16px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: rgb(250, 248, 248);
+        }   
+        .search{
+            float: right;
+        }
+        .navbar input{
+            border-radius: 10px;
+            border-color: white;
+            border-style: solid;
+            padding: 0px 12px;
+            /*Padding to make the text box bigger*/
+            /* margin: 2px 22px */
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <li> <input  type="text" name="search" placeholder="Search on this site"></li>
+
+                </div>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    
+</body>
+</html>

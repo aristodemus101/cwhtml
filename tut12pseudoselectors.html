@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and more</title>
+    <style>
+        .container{
+            border: 2px groove red;
+            background-color: rgb(77, 238, 13);
+            padding: 12px 12px;
+            margin: 12px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{ /*when you hover the hyperlink*/
+            color: rgb(157, 252, 4);
+            background-color:magenta;
+        }
+        a:visited{ /*when u have visited the link &&& a:active also exist whe nyou are about to click on the link*/
+            color: blue;
+            background-color: white;
+
+        }
+        .button{
+            background-color: rgb(223, 223, 252);
+            padding: 6px 6px;
+            border: none;
+            cursor:pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        .button:hover{
+            color: yellow;
+            font-style: italic;
+            background-color: red;
+            border: 5px solid white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container" id="cont1">
+    <h3> This is pseudo selector</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio repudiandae ea porro maiores, corrupti, exercitationem earum laborum obcaecati aut ad voluptates veniam!
+        </p>
+        <a href="https://www.google.com" class="button"> Read More</a>
+        <button class="button">Contact us</button>
+    </div>   
+</body>
+</html>
