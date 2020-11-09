@@ -56,12 +56,32 @@
                 salary: 20000,
                 chjannel: "CWH"
             }
-            //below is for in loop
+            //below is "for in" loop
         for (key in employee) {
             console.log(`the ${key} of emplyee is ${employee[key]}`);
         }
-    </script>
 
+        function hide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            } else {
+
+                para.style.display = 'block';
+            }
+        }
+    </script>
+    <style>
+        #btn {
+            padding: 20px;
+            background-color: red;
+            font-weight: bold;
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
 
 
 </head>
@@ -69,15 +89,31 @@
 <body>
     <div class="container">
         <div class="row">
-            ,
             <h1>HELOOO E</h1>
             </p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis eveniet at officia dolore repellendus doloremque eligendi, praesentium quo eum, consequuntur vitae, aliquam quaerat! Repellat, tempore. Quae obcaecati autem harum fugiat porro officia repudiandae
             nisi?
             </p>
+            <p>
+                Browser event: Click contextmenu mouseover mouseout mousedown submit focus DOMcontentLoaded Transitionend
+
+            </p>
         </div>
     </div>
+    <div class="containerr2">
+        <h1>THis is heading</h1>
+        <p id="para">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo provident eius vitae qui. Quos, possimus expedita quam modi temporibus laudantium. Perferendis esse inventore iusto officiis impedit iure sapiente nisi beatae? Aperiam enim, architecto dignissimos
+            tempore quod commodi sit id facere ratione. Deleniti qui officia cumque recusandae dolores accusantium rem minus assumenda perspiciatis illo atque, tempora accusamus, neque iusto? Cum, voluptas? Voluptas fugiat consequatur maxime corporis
+            quae sit non nihil. Modi, consequuntur corrupti! Totam enim blanditiis deserunt reprehenderit iste, nobis neque labore, animi explicabo saepe atque id soluta et sed ipsum? Vitae eos saepe nesciunt nulla amet. Maiores inventore nam magnam doloremque
+            aliquid molestiae laboriosam in unde, soluta aut libero quis cumque rem nisi quisquam enim omnis error velit eligendi minima.
+        </p>
+    </div>
+    <button id="btn" onclick="hide()">Show/Hide</button>
 
 </body>
+
+</html>
 
 </html>
