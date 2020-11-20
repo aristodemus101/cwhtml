@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EVENT LISTENER</title>
+    <style>
+        #btn{
+            padding:12px;
+            color: red;
+            border: 2px solid black;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Heading
+        </h1>
+        <p id="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nihil deleniti accusamus quisquam perferendis quasi maiores, aliquam fuga aspernatur possimus natus assumenda cupiditate corrupti molestias reprehenderit odio quis eius omnis.
+            Maiores distinctio fuga labore, asperiores dolore ipsam est porro magnam assumenda id dolorem eaque quasi! Voluptatem mollitia ad voluptatibus vitae reiciendis dolores commodi, pariatur dolorum aliquid, molestiae cumque blanditiis asperiores?
+            Quas fugit, natus debitis nemo architecto alias odio sapiente, dolor officia laboriosam deserunt laborum reprehenderit mollitia provident tempora cum quos modi perspiciatis consequatur culpa obcaecati minima sit. Aliquid, repellat accusantium.
+            Impedit, odio. Non voluptatum sit reprehenderit possimus consequatur accusamus placeat repellendus ratione, ipsum blanditiis dolores animi nihil aliquam unde modi cum provident distinctio eligendi quis. Libero reiciendis quod eaque vel.
+            Quidem illum nihil impedit, voluptates consequatur repellendus veniam corporis neque eveniet dolore dolores odio fuga ratione error, sed cumque. Totam accusamus laboriosam sed omnis porro sequi maxime reiciendis molestiae? Architecto.
+            Quidem libero necessitatibus recusandae nostrum, eligendi, tempora enim fugit ipsa, quasi inventore in pariatur optio doloremque. Ratione exercitationem deleniti dolores omnis fugiat quisquam harum consequuntur. Voluptatibus, consectetur! Rem, eligendi quibusdam.
+            Asperiores, pariatur qui a facilis corrupti dolore cupiditate inventore fugit tenetur unde totam atque. Rerum vel harum quos ducimus, eius aliquid nobis unde atque dolor dolores voluptatibus, omnis at ab.
+            Magnam deserunt voluptates animi porro alias unde quod, minus illum ducimus hic, itaque harum reprehenderit tempora suscipit temporibus, quos architecto necessitatibus beatae at maxime! Dolorum aliquid quisquam omnis provident hic!
+            Aliquam, dolorem! Placeat beatae soluta harum doloribus voluptatem asperiores nam quam veniam nemo voluptas, ea aut. Maxime, officia ut ipsum obcaecati voluptatibus laudantium officiis esse, cumque consequuntur expedita iste blanditiis.
+            Obcaecati ipsum dolor sit velit porro ipsa modi consectetur inventore esse reprehenderit et odit, quis iure? Est, id quod enim, quisquam facilis ex quibusdam quidem natus optio nostrum laudantium obcaecati?
+            Maiores nesciunt ullam aut doloremque vel, error perferendis. Quod commodi illo delectus placeat, autem aliquam praesentium sequi. Placeat, suscipit, animi incidunt commodi voluptatibus provident laudantium quis error vel tenetur architecto.
+            Itaque provident corrupti doloribus facilis ducimus suscipit mollitia nemo magni animi sit. Saepe voluptatibus earum delectus quis ipsum sed animi laborum autem sint in, commodi, debitis perferendis quos dicta corrupti!
+            KOBEEEEEEEEEEEEEEE
+        </p>
+        <button id = "btn" onmouseover="hide()">Show/Hide</button>
+    </div>
+    
+    <script>
+        let para = document.getElementById('para');
+        // para.addEventListener('mouseover',function run(){
+        //     alert("Mouse Inside")
+        // });
+        // para.addEventListener('mouseout', function run(){
+        //     alert("Mouse is outside")
+        // });
+        function hide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if(para.style.display != "none"){
+                para.style.display = "none";
+            }
+            else{
+            para.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
